@@ -2,8 +2,7 @@
 <%= @artist.song_count %>
 
 <ul>
-  <% @artists.songs.each do |c| %>
-    <li><%= link_to c.name, artist_path(c) %></li>
-    <li><%= c.song_count %></li>
+  <% @artists.songs.each do |song| %>
+    <li><%= link_to song.name, artist_path(song) %></li>
   <% end %>
 </ul>
